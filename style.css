@@ -1,0 +1,93 @@
+html {
+	background: #1C1C1C;
+}
+.container {
+	margin: 1px 1px 1px 1px;
+	padding: 2px 10.1px;
+}
+div.corpo {
+	display: flex;
+	flex-wrap: wrap;
+}
+div.quadrado {
+	background: #1E1E1E;
+	width:19.0px;
+ 	height:19.0px;
+ 	margin: 10px 10px 10px 10px;
+ 	border: 2px solid rgba(0, 0, 0, 0);
+ 	overflow: hidden;
+ 	z-index: 11;
+ 	-webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+div.quadrado:hover{
+	-webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in; 
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+
+	border: 2px solid rgba(0,255,255, 1);
+	box-shadow: 0 0 10px rgba(0,255,255, 1),
+				0 0 20px rgba(0,255,255, 1),
+				0 0 30px rgba(0,255,255, 1),
+				0 0 40px rgba(0,255,255, 1),
+				0 0 50px rgba(0,255,255, 1),
+				0 0 60px rgba(0,255,255, 1),
+				0 0 70px rgba(0,255,255, 1),
+				0 0 80px rgba(0,255,255, 1),
+				0 0 90px rgba(0,255,255, 1),
+				0 0 100px rgba(0,255,255, 1);
+
+	transform: rotate(45deg);
+	z-index: 12;
+	animation: pulso 1s ease infinite;
+}
+a {
+	color: rgba(0,255,255, 1);
+	font-size: 1px;
+	text-decoration: none;
+}
+/*Animações*/
+@keyframes pulso {
+    0% {
+        box-shadow: 
+        		0 0 20px rgba(0,255,255, 1),
+				0 0 30px rgba(0,255,255, 1),
+				0 0 40px rgba(0,255,255, 1),
+				0 0 50px rgba(0,255,255, 1),
+				0 0 60px rgba(0,255,255, 1),
+				0 0 70px rgba(0,255,255, 1),
+				0 0 80px rgba(0,255,255, 1),
+				0 0 90px rgba(0,255,255, 1),
+				0 0 100px rgba(0,255,255, 1),
+				0 0 110px rgba(0,255,255, 1);
+    }
+    50% {
+        box-shadow: 
+        		0 0 30px rgba(0,255,255, 1),
+				0 0 40px rgba(0,255,255, 1),
+				0 0 50px rgba(0,255,255, 1),
+				0 0 60px rgba(0,255,255, 1),
+				0 0 70px rgba(0,255,255, 1),
+				0 0 80px rgba(0,255,255, 1),
+				0 0 90px rgba(0,255,255, 1),
+				0 0 100px rgba(0,255,255, 1),
+				0 0 110px rgba(0,255,255, 1),
+				0 0 120px rgba(0,255,255, 1);
+    }
+    100% {
+        box-shadow: 
+        		0 0 20px rgba(0,255,255, 1),
+				0 0 30px rgba(0,255,255, 1),
+				0 0 40px rgba(0,255,255, 1),
+				0 0 50px rgba(0,255,255, 1),
+				0 0 60px rgba(0,255,255, 1),
+				0 0 70px rgba(0,255,255, 1),
+				0 0 80px rgba(0,255,255, 1),
+				0 0 90px rgba(0,255,255, 1),
+				0 0 100px rgba(0,255,255, 1),
+				0 0 110px rgba(0,255,255, 1);
+    }
+}
