@@ -91,3 +91,15 @@ a {
 				0 0 110px rgba(0,255,255, 1);
     }
 }
+
+@media(max-width: 768px) {
+	body {
+		width: 100%;
+	}
+	.container {
+		padding: 1px 1px;
+	}
+	.pai {
+		padding: auto;
+	}
+}
